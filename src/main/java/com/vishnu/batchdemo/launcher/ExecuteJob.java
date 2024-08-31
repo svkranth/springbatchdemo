@@ -16,6 +16,8 @@ public class ExecuteJob implements CommandLineRunner{
     private JobLauncher jobLauncher;
     @Autowired
     private Job jobOne;
+    @Autowired
+    private Job jobTwo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -26,6 +28,9 @@ public class ExecuteJob implements CommandLineRunner{
         JobExecution jobExecution = jobLauncher.run(jobOne, jobParameters);
 
         System.out.println("Job Status: " + jobExecution.getStatus());
+
+        JobExecution secondJobExecution = jobLauncher.run(jobTwo, jobParameters);
+        System.out.println("Second job Status: " + secondJobExecution.getStatus());
     }
 
 }

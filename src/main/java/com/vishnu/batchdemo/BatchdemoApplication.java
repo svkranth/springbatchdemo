@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 //This annotation is not required if spring boot auto configuration is to be used to create metedata tables for batch
 @EnableBatchProcessing
-@ComponentScan({"com.vishnu.batchdemo","com.vishnu.batchdemo.launcher","com.vishnu.batchdemo.reader","com.vishnu.batchdemo.writer","com.vishnu.batchdemo.processor"})
+@ComponentScan({"com.vishnu.batchdemo","com.vishnu.batchdemo.launcher","com.vishnu.batchdemo.reader","com.vishnu.batchdemo.writer","com.vishnu.batchdemo.processor","com.vishnu.batchdemo.model"})
 public class BatchdemoApplication {
 
 	public static void main(String[] args) {

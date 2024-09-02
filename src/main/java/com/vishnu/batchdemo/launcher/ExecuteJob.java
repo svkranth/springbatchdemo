@@ -18,6 +18,10 @@ public class ExecuteJob implements CommandLineRunner{
     private Job jobOne;
     @Autowired
     private Job jobTwo;
+    @Autowired
+    private Job jobThree;
+    @Autowired
+    private Job jobFour;
 
     @Override
     public void run(String... args) throws Exception {
@@ -31,6 +35,12 @@ public class ExecuteJob implements CommandLineRunner{
 
         JobExecution secondJobExecution = jobLauncher.run(jobTwo, jobParameters);
         System.out.println("Second job Status: " + secondJobExecution.getStatus());
+
+        JobExecution thirdJobExecution = jobLauncher.run(jobThree, jobParameters);
+        System.out.println("Third job status: " + thirdJobExecution.getStatus());
+
+        JobExecution fourthJobExecution = jobLauncher.run(jobFour, jobParameters);
+        System.out.println("Fourth Job STatus: " + fourthJobExecution.getStatus());
     }
 
 }

@@ -8,3 +8,13 @@ Included a second job to demonstarte Chunk oriented step to read from a string a
 09/02 Changes: 
 JobThree is added to app. This Job reads instructor details from a csv file using FLat file Item reader and displays the contents to console in Item writer.
 JobFour is added to app. This Job reads instructor details from mysql database table using Jdbc cursor item reader and writes the content to a csv file using flat file item writer.
+
+All Item Readers can be found in path - src/main/java/com/vishnu/batchdemo/reader
+
+All Item Writers can be found in path - src/main/java/com/vishnu/batchdemo/writer
+
+All Jobs can be found in path - src/main/java/com/vishnu/batchdemo/config
+
+The class used to launch jobs can be found in path - src/main/java/com/vishnu/batchdemo/launcher
+
+The POJO class for instructor detail object that is to be used for all readers and writers can be found in path - src/main/java/com/vishnu/batchdemo/model

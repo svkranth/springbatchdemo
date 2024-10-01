@@ -15,6 +15,6 @@ All Item Writers can be found in path - src/main/java/com/vishnu/batchdemo/write
 
 All Jobs can be found in path - src/main/java/com/vishnu/batchdemo/config
 
-The class used to launch jobs can be found in path - src/main/java/com/vishnu/batchdemo/launcher
+The class used to launch jobs can be found in path - src/main/java/com/vishnu/batchdemo/launcher. Job name is received as argument. To run job within an IDE, you can pass the argument in the run configuration (e.g., Run > Edit Configurations in IntelliJ or Run > Run Configurations in Eclipse) or press cntrl+Shift+D, create launch.json file and pass args on launch.json in VS code.
 
 The POJO class for instructor detail object that is to be used for all readers and writers can be found in path - src/main/java/com/vishnu/batchdemo/model
